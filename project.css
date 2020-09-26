@@ -1,0 +1,157 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a{
+	color: hsl(228, 56%, 26%);
+}
+
+body {
+	margin:	0px;
+	padding: 0px;
+}
+#container{ 
+	width: 100%;
+	height: 100vh;
+	background-color: hsl(229, 57%, 11%);
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+.content{
+	padding: 40px;
+	background-color: hsl(228, 56%, 26%);
+    vertical-align: bottom;
+    display: inline-block;
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.45);
+}
+#mainContent{
+	z-index: 1001;
+}
+#actions{
+  margin-top: 20px;
+}
+.actionButton{
+	background-color: hsl(229, 57%, 11%);
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.actionButton:First-of-type{
+	margin-left: 0;
+}
+#leftContent{
+	z-index: 1000;
+	padding: 40px;
+	padding-right: 100px;
+	margin-right:  20px;
+	border-radius: 10px 75px 10px 10px;
+}
+#rightContent{
+	color: white;
+	border-radius: 10px;
+	position: relative;
+}
+#usage{
+	font-size: 12px;
+	color: #b3b3ff;
+	font-family: 'Raleway', sans-serif;
+}
+#currentUsage{
+	font-weight: 700;
+	color: #FFF;
+}
+#usageBar{
+	background-color: hsl(229, 54%, 18%);
+	width: 450px;
+	height: 14px;
+	border-radius: 1000px;
+	border: 3px solid hsl(229, 54%, 18%); 
+	position: relative;
+    }
+ #usageFill{
+ 	width: 81.5%;
+ 	height: 100%;
+ 	border-radius: 1000px;
+ 	background: linear-gradient(90deg,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+#usageLeft{
+	position: absolute;
+	right: 20px;
+	top: -30px;
+	background-color: white;
+	color: hsl(229, 57%, 11%);
+	padding: 15px;
+	border-radius: 10px 10px 0 10px;
+	font-size: 12px;
+	margin: 0;
+}
+#usageLeft::before{
+	content: "";
+	background-color: white;
+	height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+#usageRemaining{
+	font-size: 28px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+}
+#usageBall{
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 1000px;
+	position: absolute;
+	top: 2px;
+	right: 18.5%;
+}   
+.usageLimit{
+	position: absolute;
+	top: 10px;
+	font-size: 10px;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+}
+#usageMaxLimit{
+	right: 0;
+}
+#background{
+	background-image: url("bg-desktop.PNG");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 50vh;
+	position: absolute;
+	top: 50vh;
+}
+
+ /*Mobile version */
+@media (max-width: 890px){
+	#mainContent{
+		text-align: center;
+		width: calc(100% - 40px);
+	}
+	.content{
+		display: block;
+	}
+	#leftContent{
+		margin-bottom: 20px;
+	}
+}

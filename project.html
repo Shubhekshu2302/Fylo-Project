@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <!-- Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Fylo data storage component</title>
+
+        <link rel="stylesheet" type="text/css" href="project.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="mainContent">
+                <div id="leftContent" class="content">
+                    <div id="logoSection">
+                        <img id="logo" src="logo.svg" alt="Fylo logo" />
+                    </div>
+                    <div id="actions">
+                        <button class="actionButton">
+                            <img
+                                src="icon-document.svg"
+                                class="actionImage"
+                                alt="Document button"
+                            />
+                        </button>
+                        <button class="actionButton">
+                            <img
+                                src="icon-folder.svg"
+                                class="actionImage"
+                                alt="Folder button"
+                            />
+                        </button>
+                        <button class="actionButton">
+                            <img
+                                src="icon-upload.svg"
+                                class="actionImage"
+                                alt="Upload button"
+                            />
+                        </button>
+                    </div>
+                </div>
+
+                    <div id="rightContent" class="content">
+                    <p id="usage">
+                        You've used <span id="currentUsage">815 GB</span> of
+                        your storage
+                    </p>
+                    <div id="usageBar">
+                        <div id="usageFill"></div>
+                        <div id="usageBall"></div>
+                    
+                    <p id="usageMinLimit" class="usageLimit">0 GB</p>
+                    <p id="usageMaxLimit" class="usageLimit">1000 GB</p>
+                </div>
+                    <p id="usageLeft">
+                        <span id="usageRemaining">185</span>GB LEFT </p>                        
+                    </div>
+                </div>
+            </div>
+            <div id="background"></div>
+        </div>
+
+        <!-- Frontend Mentor attribution-->
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Johannes</a>.
+        </div>
+    </body>
+</html>
